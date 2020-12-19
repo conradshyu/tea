@@ -1,0 +1,73 @@
+===INTRO===
+
+TEA is good. TEA is a text editor with the hundreds of features.
+
+===INSTALLATION===
+
+If you have installed Qt 4.4+ or Qt 5, just run:
+
+qmake
+make
+make install
+
+If you have installed both Qq 3 and Qt 4, find the Qt4's qmake first. For example, do this:
+
+locate qmake
+
+It is a high possibility that qmake is located here: /usr/lib/qt4/bin/qmake
+
+So to build TEA on such "dual-Qt" system, use somethink like that:
+
+/usr/lib/qt4/bin/qmake
+make
+make install
+
+===DEPENDENCIES===
+
+Qt 4.4, Qt 5 or higher. Optional: libaspell, libhunspell-1.2
+Debian/Ubuntu users need to install zlib1g-dev, and, optionally: libaspell-dev, libhunspell-dev packages
+
+In the case if your Qt5 is compiled without printing support, configure TEA in the following way:
+
+qmake USE_PRINTER=false
+
+TEA also supports following qmake options:
+
+USE_ASPELL=true/false      //true by default
+USE_HUNSPELL=true/false    //true by default
+
+example to disable Hunspell, but with the Aspell supported:
+
+qmake USE_HUNSPELL=false
+
+to disable just Aspell:
+
+qmake USE_ASPELL=false
+
+to disable both:
+
+qmake USE_HUNSPELL=false USE_ASPELL=false
+
+to enable all:
+
+qmake
+
+
+===NOTE FOR PACKAGE MAINTAINERS===
+
+TEA after the compilation is a single binary file (with embeded resources). To override the default installation path (/usr/local/bin) use:
+
+qmake PREFIX=your_path
+make
+make install
+
+
+===LICENSE NOTES===
+
+TEA code is licensed under GPL V3 and, partially, as a Public Domain. TEA media (images, etc), manuals and translations are public domain. Note to contributors - please put your translations into the public domain or GPL.
+
+===DONATE===
+
+If you want to support TEA via donation, better give your support to the Ukrainian dog shelter Lyubas House - http://lyubas.ho.ua/. There are lot of dogs with disabilities, and they need help more than TEA.
+
+Ежели вы хотите как-то поддержать разработку TEA денежно, лучше поддержите киевский приют для собак Дом Любчика - http://lyubas.ho.ua/. Любчик - это пёс на инвалидной коляске. У него много друзей, которым всегда нужна помощь.

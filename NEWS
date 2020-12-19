@@ -1,0 +1,18 @@
+=====NEWS ABOUT TEA====
+TEA 35.0.0, March 24 2013
+---------------------------------------
+http://semiletov.org/tea
+---------------------------------------
+
+   Namaste! TEA site is moving to the new location (http://semiletov.org/tea) on my home-runned server. Old sites on SourceForge (TEA main site) and Google (Win32 Russian site) will be down soon, after the next TEA release. This move can drop down the popularity of TEA, but... In the case of SF hosting, I don't want to advertise anything (SF shows ads when you download files). Also I'm trying to minimize the use of Google services in my life. So here is my new e-mail:  tea@list.ru
+   Speaking about all that bugtracking stuff from SF - it will not be transferred to ther new site. I don't like bugtrackers, I prefere the good old e-mail for the reports, suggestions, etc.
+   So, what's new in 35.0.0? The useful changes.
+   The line endings (CR, CR/LF, LF) now works in a natural way. In the past, TEA saves line endings in the platform's default line ending (for example, CR/LF on Windows and LF on Linux). Now, TEA preserves the original line endings of the file. But you can set it manually via File - File actions.
+   The built-in file manager has been rewritten a lot. Inner changes are significant, but the behavior of UI is changed too. Now, to select files multiply via keyboard, use INSERT key instead of Sheift-Cursor. So the selection now acts exactly as in MC or Krusader.
+   Wiki editing mode now supports DokuWiki and MediaWiki instead of the odd "wikitext" mode.
+   More fixes to satisfy Qt5-compatibility. Et cetera.
+
+   If you want to support TEA via donation, better support the Ukrainian dog shelter Lyubas House - http://www.ukraineanimalrescue.org/#!lyubas-house/cxfj/. There are lot of dogs with disabilities, and they need help more than TEA.
+
+   Stay tuned.
+   Peter 'Roxton' Semiletov
